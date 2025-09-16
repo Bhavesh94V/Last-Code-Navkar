@@ -1,0 +1,270 @@
+/* Professional Black & White Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Black & White Color Palette */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+
+    /* Primary: Pure Black */
+    --primary: 0 0% 5%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 0 0% 15%;
+
+    /* Secondary: Light Gray */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 5%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent: Dark Gray */
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 0 0% 30%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 5%;
+
+    --radius: 0.75rem;
+
+    /* Black & White Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 15%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 96%) 0%, hsl(0 0% 100%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 25%) 50%, hsl(0 0% 45%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(0 0% 20%) 0%, hsl(0 0% 35%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(0 0% 5% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(0 0% 5% / 0.12);
+    --shadow-strong: 0 8px 32px hsl(0 0% 5% / 0.16);
+    --shadow-glow: 0 0 32px hsl(0 0% 20% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 0% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 80%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 85%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 0% 80%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 50%;
+  }
+}
+
+@layer base {
+  :root {
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Poppins', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+
+@layer components {
+  /* Professional Button Variants */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* Card Variants */
+  .card-professional {
+    @apply bg-card border border-border rounded-xl shadow-soft hover:shadow-medium transition-all duration-300;
+  }
+
+  .card-service {
+    @apply bg-card border border-border rounded-xl overflow-hidden shadow-soft hover:shadow-strong transition-all duration-500 cursor-pointer;
+  }
+
+  /* Text Styles */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .heading-professional {
+    @apply font-serif font-semibold text-foreground leading-tight;
+  }
+
+  /* Scroll Animations */
+  .animate-fade-up {
+    @apply opacity-0 translate-y-8;
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-left {
+    @apply opacity-0 translate-x-8;
+    animation: fadeLeft 0.8s ease-out forwards;
+  }
+
+  .animate-fade-right {
+    @apply opacity-0 -translate-x-8;
+    animation: fadeRight 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    @apply opacity-0 scale-95;
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  /* Service Card Blur Effect */
+  .service-blur {
+    @apply transition-all duration-500;
+    filter: blur(0px);
+  }
+
+  .service-blur.active {
+    filter: blur(2px);
+  }
+
+  /* News Scroll Effect */
+  .news-container {
+    @apply transition-all duration-700 ease-in-out;
+  }
+
+  .news-expanded {
+    @apply max-h-96 overflow-y-auto;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slideInHorizontal {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInVertical {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
