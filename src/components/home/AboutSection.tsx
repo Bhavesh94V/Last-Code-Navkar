@@ -31,9 +31,9 @@ const AboutSection = () => {
 
   const stats = [
     { icon: Award, number: '25+', label: 'Years Experience' },
-    { icon: Users, number: '500+', label: 'Happy Clients' },
-    { icon: TrendingUp, number: '1000+', label: 'Projects Completed' },
-    { icon: Shield, number: '100%', label: 'Compliance Rate' }
+    { icon: Users, number: '99+', label: 'Happy Clients' },
+    { icon: TrendingUp, number: '100+', label: 'Projects Completed' },
+    { icon: Shield, number: '98%', label: 'Compliance Rate' }
   ]
 
   return (

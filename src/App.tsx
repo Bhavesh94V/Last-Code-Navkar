@@ -16,6 +16,10 @@ import BPOPage from "./pages/BPO";
 import AuditingAssurance from "./pages/AuditingAssurance";
 import Advisory from "./pages/Advisory";
 import Accounting from "./pages/AccountingServices";
+import ClientsSection from "./pages/Clients";
+import Articles from "./pages/Articles";
+import QueryForm from "./pages/QueryForm";
+import CareersPage from "./pages/CareersPage";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +32,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
+          <Route path="/clients" element={<ClientsSection />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/query" element={<QueryForm />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/gujarat-vat-service-tax" element={<GujaratVatAndServiceTax />} />
           <Route path="/services/direct-taxation" element={<DirectTaxation />} />
