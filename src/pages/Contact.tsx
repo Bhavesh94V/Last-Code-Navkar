@@ -27,7 +27,7 @@ const Contact = () => {
   const { toast } = useToast()
 
   useEffect(() => {
-    document.title = 'Contact Us - Navkar Bhaskar & Co. | Chartered Accountant'
+    document.title = 'Contact Us - Navkar Bhavsar & Co. | Chartered Accountant'
   }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -62,7 +62,7 @@ const Contact = () => {
       icon: MapPin,
       title: 'Office Address',
       details: [
-        'Navkar Bhaskar & Co.',
+        'Navkar Bhavsar & Co.',
         'VRAJ VALENCIA, 4th Floor 408-411,',
         'Behind Mahindra Showroom, Near Sola Flyover,',
         'S. G. Highway, Ahmedabad - 380060'

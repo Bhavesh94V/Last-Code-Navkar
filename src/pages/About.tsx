@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   useEffect(() => {
-    document.title = 'About Us - Navkar Bhaskar & Co. | Chartered Accountant'
+    document.title = 'About Us - Navkar Bhavsar & Co. | Chartered Accountant'
   }, [])
 
   const values = [
@@ -45,7 +45,7 @@ const About = () => {
 
   const team = [
     {
-      name: 'CA Navkar Bhaskar',
+      name: 'CA Navkar Bhavsar',
       position: 'Managing Partner',
       experience: '25+ Years',
       specialization: 'Corporate Finance & Tax Planning',
@@ -79,7 +79,7 @@ const About = () => {
         <div className='container mx-auto px-6'>
           <div className='max-w-4xl mx-auto text-center'>
             <h1 className='text-5xl md:text-6xl font-serif font-bold mb-6'>
-              About Navkar Bhaskar & Co.
+              About Navkar Bhavsar & Co.
             </h1>
             <p className='text-xl md:text-2xl text-white/90 leading-relaxed'>
               A legacy of trust, excellence, and professional service in
@@ -102,7 +102,7 @@ const About = () => {
               </h2>
               <div className='space-y-6 text-muted-foreground leading-relaxed'>
                 <p>
-                  Established in 1999 by CA Navkar Bhaskar, our firm was founded
+                  Established in 1999 by CA Navkar Bhavsar, our firm was founded
                   with a clear vision – to deliver reliable and comprehensive
                   financial solutions that help businesses and individuals grow
                   with confidence. From a modest beginning, we have evolved into
@@ -116,7 +116,7 @@ const About = () => {
                   professionals committed to excellence.
                 </p>
                 <p>
-                  Today, Navkar Bhaskar & Co. partners with clients from startups
+                  Today, Navkar Bhavsar & Co. partners with clients from startups
                   to established enterprises across industries. With a
                   multidisciplinary approach and deep industry knowledge, we
                   provide solutions that address complex financial challenges

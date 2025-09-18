@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Navkar Bhaskar & Co. - Professional Chartered Accountant Services";
+    document.title = "Navkar Bhavsar & Co. - Professional Chartered Accountant Services";
   }, []);
 
   return (

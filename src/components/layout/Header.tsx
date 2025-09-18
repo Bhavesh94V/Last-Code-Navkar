@@ -766,7 +766,7 @@ const Header = () => {
                   isScrolled ? 'text-foreground' : 'text-white'
                 }`}
               >
-                Navkar Bhaskar
+                Navkar Bhavsar
               </h1>
               <p
                 className={`text-sm font-medium transition-colors duration-300 ${

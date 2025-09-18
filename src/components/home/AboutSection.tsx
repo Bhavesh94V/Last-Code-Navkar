@@ -45,7 +45,7 @@ const AboutSection = () => {
           <div>
             <div className='animate-on-scroll'>
               <span className='text-muted-foreground font-semibold text-lg'>
-                About Navkar Bhaskar & Co.
+                About Navkar Bhavsar & Co.
               </span>
               <h2 className='text-4xl md:text-5xl font-serif font-bold text-foreground mt-4 mb-6'>
                 Your Trusted Financial Partner Since 1999
@@ -58,8 +58,8 @@ const AboutSection = () => {
                 <strong>
                   1<sup>st</sup> April 1999
                 </strong>{' '}
-                by Mr. Navkar Bhaskar,
-                <strong> M/s Navkar Bhaskar & Co.</strong> has been serving
+                by Mr. Navkar Bhavsar,
+                <strong> M/s Navkar Bhavsar & Co.</strong> has been serving
                 clients across diverse structures including Companies, Trusts,
                 Firms, Proprietorships and Government Bodies. We are committed
                 to delivering services of the highest standards while keeping
@@ -67,7 +67,7 @@ const AboutSection = () => {
               </p>
 
               <p className='text-lg text-muted-foreground leading-relaxed'>
-                <strong>Navkar Bhaskar & Co.</strong> is a distinguished team of
+                <strong>Navkar Bhavsar & Co.</strong> is a distinguished team of
                 Chartered Accountants, advisors and tax consultants. We offer
                 expertise in Tax Advisory, Legal Compliance and allied services,
                 providing value-driven solutions to meet evolving business
