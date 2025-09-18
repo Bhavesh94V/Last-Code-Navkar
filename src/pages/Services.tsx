@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom'
 
 const Services = () => {
   useEffect(() => {
-    document.title = 'Our Services - Bihari Shah & Co. | Chartered Accountant'
+    document.title = 'Our Services - Navkar Bhaskar & Co. | Chartered Accountant'
   }, [])
 
   const services = [

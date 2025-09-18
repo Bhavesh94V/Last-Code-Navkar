@@ -47,7 +47,7 @@ const ClientsSection = () => {
       position: "CEO, TechCorp Solutions",
       company: "Technology Sector", 
       rating: 5,
-      testimonial: "Bihari Shah & Co. has been instrumental in our company's financial success. Their strategic tax planning saved us significant costs while ensuring complete compliance.",
+      testimonial: "Navkar Bhaskar & Co. has been instrumental in our company's financial success. Their strategic tax planning saved us significant costs while ensuring complete compliance.",
       image: "/api/placeholder/80/80"
     },
     {

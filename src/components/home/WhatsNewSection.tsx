@@ -51,7 +51,7 @@ Key Changes Include:
 Impact on Businesses:
 These changes will require businesses to update their accounting systems and ensure timely compliance. We recommend reviewing your current GST processes and implementing necessary changes before the deadline.
 
-Our team at Bihari Shah & Co. is ready to help you navigate these changes smoothly. Contact us for a comprehensive compliance review.`,
+Our team at Navkar Bhaskar & Co. is ready to help you navigate these changes smoothly. Contact us for a comprehensive compliance review.`,
       image: "/api/placeholder/400/250",
       tags: ["GST", "Compliance", "Tax"]
     },
@@ -77,7 +77,7 @@ Financial Planning Considerations:
 • Investment in technology and infrastructure
 • Risk management and insurance coverage
 
-At Bihari Shah & Co., we work closely with small businesses to develop customized growth strategies that align with their financial capabilities and market opportunities.`,
+At Navkar Bhaskar & Co., we work closely with small businesses to develop customized growth strategies that align with their financial capabilities and market opportunities.`,
       image: "/api/placeholder/400/250",
       tags: ["Business Growth", "Strategy", "Planning"]
     },

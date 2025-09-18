@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className='text-xl font-serif font-bold'>
-                  Bihari Shah & Co.
+                  Navkar Bhaskar & Co.
                 </h3>
                 <p className='text-sm text-muted-foreground'>
                   Chartered Accountant
@@ -124,7 +124,7 @@ const Footer = () => {
               <div className='flex items-start space-x-3'>
                 <MapPin className='w-5 h-5 text-accent mt-1 flex-shrink-0' />
                 <div className='text-primary-foreground/80 text-sm leading-relaxed'>
-                  Bihari Shah & Co., <br />
+                  Navkar Bhaskar & Co., <br />
                   VRAJ VALENCIA, 4th Floor 408-411, <br />
                   Behind Mahindra Showroom, Near Sola Flyover, <br />
                   S. G. Highway, Ahmedabad - 380060
@@ -192,7 +192,7 @@ const Footer = () => {
         <div className='container mx-auto px-6 py-6'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='text-primary-foreground/80 text-sm mb-4 md:mb-0'>
-              © {currentYear} Bihari Shah & Co. All rights reserved.
+              © {currentYear} Navkar Bhaskar & Co. All rights reserved.
             </div>
             <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm'>
               <Link

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Award, Users, TrendingUp, Shield } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Link } from 'react-router-dom'
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null)
@@ -44,7 +45,7 @@ const AboutSection = () => {
           <div>
             <div className='animate-on-scroll'>
               <span className='text-muted-foreground font-semibold text-lg'>
-                About Bihari Shah & Co.
+                About Navkar Bhaskar & Co.
               </span>
               <h2 className='text-4xl md:text-5xl font-serif font-bold text-foreground mt-4 mb-6'>
                 Your Trusted Financial Partner Since 1999
@@ -57,16 +58,16 @@ const AboutSection = () => {
                 <strong>
                   1<sup>st</sup> April 1999
                 </strong>{' '}
-                by Mr. Bihari Shah,
-                <strong> M/s Bihari Shah & Co.</strong> has been serving clients
-                across diverse structures including Companies, Trusts, Firms,
-                Proprietorships and Government Bodies. We are committed to
-                delivering services of the highest standards while keeping
+                by Mr. Navkar Bhaskar,
+                <strong> M/s Navkar Bhaskar & Co.</strong> has been serving
+                clients across diverse structures including Companies, Trusts,
+                Firms, Proprietorships and Government Bodies. We are committed
+                to delivering services of the highest standards while keeping
                 client interests at the forefront.
               </p>
 
               <p className='text-lg text-muted-foreground leading-relaxed'>
-                <strong>Bihari Shah & Co.</strong> is a distinguished team of
+                <strong>Navkar Bhaskar & Co.</strong> is a distinguished team of
                 Chartered Accountants, advisors and tax consultants. We offer
                 expertise in Tax Advisory, Legal Compliance and allied services,
                 providing value-driven solutions to meet evolving business
@@ -75,9 +76,12 @@ const AboutSection = () => {
             </div>
 
             <div className='animate-on-scroll mt-8'>
-              <Button size='lg' className='btn-primary'>
+              <Link
+                to='/about'
+                className='btn-primary inline-block px-6 py-3 rounded-lg text-white text-lg font-medium'
+              >
                 Learn More About Us
-              </Button>
+              </Link>
             </div>
           </div>
 
@@ -112,7 +116,11 @@ const AboutSection = () => {
               Our Mission
             </h3>
             <p className='text-muted-foreground leading-relaxed'>
-              To provide top-tier, client-focused financial and professional services, including accounting, auditing, taxation, and advisory, while ensuring integrity, confidentiality, and excellence in every engagement. We strive to empower clients with tailored solutions that optimize growth, compliance, and financial performance.
+              To provide top-tier, client-focused financial and professional
+              services, including accounting, auditing, taxation, and advisory,
+              while ensuring integrity, confidentiality, and excellence in every
+              engagement. We strive to empower clients with tailored solutions
+              that optimize growth, compliance, and financial performance.
             </p>
           </div>
 
@@ -124,7 +132,11 @@ const AboutSection = () => {
               Our Vision
             </h3>
             <p className='text-muted-foreground leading-relaxed'>
-              To be the most trusted and respected chartered accountancy and advisory firm, delivering excellence through client-focused, tailored solutions that optimize growth, ensure compliance, and enhance financial performance, while upholding the highest standards of integrity and professionalism.
+              To be the most trusted and respected chartered accountancy and
+              advisory firm, delivering excellence through client-focused,
+              tailored solutions that optimize growth, ensure compliance, and
+              enhance financial performance, while upholding the highest
+              standards of integrity and professionalism.
             </p>
           </div>
         </div>
