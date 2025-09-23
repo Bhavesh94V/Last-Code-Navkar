@@ -1,4 +1,4 @@
-/* Professional Black & White Design System */
+/* Professional Dark Blue Design System */
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -8,114 +8,124 @@
 
 @layer base {
   :root {
-    /* Black & White Color Palette */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 5%;
+    /* Dark Blue Color Palette (#014182) */
+    /* HSL equivalent for #014182 is approx. 210 98% 26% */
+    --primary-hue: 210;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
+    --background: var(--primary-hue) 30% 98%; /* Very light blue tint */
+    --foreground: var(--primary-hue) 40% 10%; /* Very dark blue, almost black */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --card: var(--primary-hue) 30% 100%; /* White with a hint of blue */
+    --card-foreground: var(--primary-hue) 40% 10%;
 
-    /* Primary: Pure Black */
-    --primary: 0 0% 5%;
-    --primary-foreground: 0 0% 98%;
-    --primary-hover: 0 0% 15%;
+    --popover: var(--primary-hue) 30% 100%;
+    --popover-foreground: var(--primary-hue) 40% 10%;
 
-    /* Secondary: Light Gray */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 5%;
+    /* Primary: Your Dark Blue */
+    --primary: var(--primary-hue) 98% 26%; /* #014182 */
+    --primary-foreground: 0 0% 98%; /* White text for contrast */
+    --primary-hover: var(--primary-hue) 98% 31%; /* Slightly lighter blue for hover */
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    /* Secondary: Light Blue-Gray */
+    --secondary: var(--primary-hue) 30% 95%;
+    --secondary-foreground: var(--primary-hue) 40% 10%;
 
-    /* Accent: Dark Gray */
-    --accent: 0 0% 20%;
+    --muted: var(--primary-hue) 30% 95%;
+    --muted-foreground: var(--primary-hue) 20% 45%;
+
+    /* Accent: A brighter, complementary blue */
+    --accent: var(--primary-hue) 70% 50%;
     --accent-foreground: 0 0% 98%;
-    --accent-hover: 0 0% 30%;
+    --accent-hover: var(--primary-hue) 70% 55%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 5%;
+    --border: var(--primary-hue) 25% 90%;
+    --input: var(--primary-hue) 25% 90%;
+    --ring: var(--primary-hue) 98% 26%; /* Main blue for focus rings */
 
     --radius: 0.75rem;
 
-    /* Black & White Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 15%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 96%) 0%, hsl(0 0% 100%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 25%) 50%, hsl(0 0% 45%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(0 0% 20%) 0%, hsl(0 0% 35%) 100%);
+    /* Blue Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-hue) 80% 35%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--primary-hue) 70% 60%) 100%);
 
-    /* Shadows */
-    --shadow-soft: 0 2px 8px hsl(0 0% 5% / 0.08);
-    --shadow-medium: 0 4px 16px hsl(0 0% 5% / 0.12);
-    --shadow-strong: 0 8px 32px hsl(0 0% 5% / 0.16);
-    --shadow-glow: 0 0 32px hsl(0 0% 20% / 0.4);
+    /* Blue-tinted Shadows for a cohesive look */
+    --shadow-soft: 0 2px 8px hsl(var(--primary-hue) 50% 20% / 0.1);
+    --shadow-medium: 0 4px 16px hsl(var(--primary-hue) 50% 20% / 0.15);
+    --shadow-strong: 0 8px 32px hsl(var(--primary-hue) 50% 20% / 0.2);
+    --shadow-glow: 0 0 32px hsl(var(--accent) / 0.4);
 
-    /* Animations */
+    /* Animations (Unchanged) */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-background: 0 0% 5%;
+    /* Sidebar with Blue Theme */
+    --sidebar-background: var(--primary-hue) 40% 10%; /* Dark blue-black */
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 0 0% 20%;
+    --sidebar-primary: var(--accent);
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent: var(--primary-hue) 60% 30%;
     --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 0 0% 50%;
+    --sidebar-border: var(--primary-hue) 50% 15%;
+    --sidebar-ring: var(--primary-hue) 70% 60%;
   }
 
   .dark {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 98%;
+    /* Dark Mode with Blue Theme */
+    --background: var(--primary-hue) 30% 5%; /* Very dark blue */
+    --foreground: var(--primary-hue) 20% 98%; /* Light blue-white text */
 
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 98%;
+    --card: var(--primary-hue) 30% 8%;
+    --card-foreground: var(--primary-hue) 20% 98%;
 
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 98%;
+    --popover: var(--primary-hue) 30% 5%;
+    --popover-foreground: var(--primary-hue) 20% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 5%;
+    /* Primary in dark mode is a light, soft blue for buttons */
+    --primary: var(--primary-hue) 80% 85%;
+    --primary-foreground: var(--primary-hue) 98% 26%; /* Main dark blue for text on buttons */
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: var(--primary-hue) 25% 15%;
+    --secondary-foreground: var(--primary-hue) 20% 98%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: var(--primary-hue) 25% 15%;
+    --muted-foreground: var(--primary-hue) 15% 65%;
 
-    --accent: 0 0% 80%;
-    --accent-foreground: 0 0% 5%;
+    /* Accent in dark mode can be the main brand blue */
+    --accent: var(--primary-hue) 98% 26%; /* #014182 */
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 0 0% 85%;
-    --sidebar-background: 0 0% 10%;
+    --border: var(--primary-hue) 25% 15%;
+    --input: var(--primary-hue) 25% 15%;
+    --ring: var(--primary-hue) 80% 85%; /* Light blue ring */
+
+    /* Dark Mode Sidebar */
+    --sidebar-background: var(--primary-hue) 40% 8%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 0 0% 80%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 15%;
+    --sidebar-primary: var(--primary-hue) 80% 85%;
+    --sidebar-primary-foreground: var(--primary-hue) 98% 26%;
+    --sidebar-accent: var(--primary-hue) 30% 15%;
     --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 0 0% 50%;
+    --sidebar-border: var(--primary-hue) 30% 15%;
+    --sidebar-ring: var(--primary-hue) 70% 60%;
   }
 }
 
 @layer base {
   :root {
-    --font-heading: 'Merriweather', serif;
-    --font-body: 'Poppins', sans-serif;
+    --font-heading: 'Times New Roman', Times, serif;
+    --font-body: 'Arial', Helvetica, sans-serif;
   }
 
   body {
+    @apply bg-background text-foreground;
     font-family: var(--font-body);
   }
 
@@ -126,6 +136,8 @@
 
 
 @layer components {
+  /* Components will automatically use the new blue variables */
+  
   /* Professional Button Variants */
   .btn-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg transition-all duration-300;
@@ -157,7 +169,7 @@
     @apply font-serif font-semibold text-foreground leading-tight;
   }
 
-  /* Scroll Animations */
+  /* Scroll Animations (Unchanged) */
   .animate-fade-up {
     @apply opacity-0 translate-y-8;
     animation: fadeUp 0.8s ease-out forwards;
@@ -178,7 +190,7 @@
     animation: scaleIn 0.6s ease-out forwards;
   }
 
-  /* Service Card Blur Effect */
+  /* Service Card Blur Effect (Unchanged) */
   .service-blur {
     @apply transition-all duration-500;
     filter: blur(0px);
@@ -188,7 +200,7 @@
     filter: blur(2px);
   }
 
-  /* News Scroll Effect */
+  /* News Scroll Effect (Unchanged) */
   .news-container {
     @apply transition-all duration-700 ease-in-out;
   }
@@ -198,6 +210,7 @@
   }
 }
 
+/* Keyframes (Unchanged) */
 @keyframes fadeUp {
   from {
     opacity: 0;

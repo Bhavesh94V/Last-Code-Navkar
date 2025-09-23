@@ -70,16 +70,23 @@ const About = () => {
     }
   ]
 
+  const stats = [
+    { icon: Award, number: '25+', label: 'Years Experience' },
+    { icon: Users, number: '99+', label: 'Happy Clients' },
+    { icon: TrendingUp, number: '100+', label: 'Projects Completed' },
+    { icon: Shield, number: '98%', label: 'Compliance Rate' }
+  ]
+
   return (
     <div className='min-h-screen bg-background'>
       <Header />
 
       {/* Hero Section */}
-      <section className='pt-24 pb-20 bg-gradient-hero text-white'>
+      <section className='pt-24 pb-20 bg-gradient-hero text-white mt-10'>
         <div className='container mx-auto px-6'>
           <div className='max-w-4xl mx-auto text-center'>
             <h1 className='text-5xl md:text-6xl font-serif font-bold mb-6'>
-              About Navkar Bhavsar & Co.
+              About Us
             </h1>
             <p className='text-xl md:text-2xl text-white/90 leading-relaxed'>
               A legacy of trust, excellence, and professional service in
@@ -116,8 +123,8 @@ const About = () => {
                   professionals committed to excellence.
                 </p>
                 <p>
-                  Today, Navkar Bhavsar & Co. partners with clients from startups
-                  to established enterprises across industries. With a
+                  Today, Navkar Bhavsar & Co. partners with clients from
+                  startups to established enterprises across industries. With a
                   multidisciplinary approach and deep industry knowledge, we
                   provide solutions that address complex financial challenges
                   and create long-term value.
@@ -125,31 +132,23 @@ const About = () => {
               </div>
             </div>
 
-            <div className='grid grid-cols-2 gap-6'>
-              <div className='card-professional p-6 text-center'>
-                <div className='text-3xl font-bold font-serif text-primary mb-2'>
-                  25+
+            <div className='grid grid-cols-2 gap-8'>
+              {stats.map((stat, index) => (
+                <div
+                  key={index}
+                  className='animate-on-scroll card-professional p-8 text-center group hover:shadow-strong transition-all duration-300'
+                >
+                  <div className='w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300'>
+                    <stat.icon className='w-8 h-8 text-primary-foreground' />
+                  </div>
+                  <div className='text-3xl font-bold font-serif text-primary mb-2'>
+                    {stat.number}
+                  </div>
+                  <div className='text-muted-foreground font-medium'>
+                    {stat.label}
+                  </div>
                 </div>
-                <div className='text-muted-foreground'>Years of Excellence</div>
-              </div>
-              <div className='card-professional p-6 text-center'>
-                <div className='text-3xl font-bold font-serif text-primary mb-2'>
-                  99+
-                </div>
-                <div className='text-muted-foreground'>Satisfied Clients</div>
-              </div>
-              <div className='card-professional p-6 text-center'>
-                <div className='text-3xl font-bold font-serif text-primary mb-2'>
-                  15+
-                </div>
-                <div className='text-muted-foreground'>Team Members</div>
-              </div>
-              <div className='card-professional p-6 text-center'>
-                <div className='text-3xl font-bold font-serif text-primary mb-2'>
-                  30+
-                </div>
-                <div className='text-muted-foreground'>Industries Served</div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -183,7 +182,7 @@ const About = () => {
             </div>
 
             <div className='card-professional p-10 text-center'>
-              <div className='w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center mx-auto mb-6'>
+              <div className='w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6'>
                 <Eye className='w-8 h-8 text-accent-foreground' />
               </div>
               <h3 className='text-2xl font-serif font-bold text-foreground mb-4'>

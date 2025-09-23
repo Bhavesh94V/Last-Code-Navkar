@@ -88,10 +88,10 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className='text-center mb-16'>
           <div className='animate-on-scroll'>
-            <span className='text-muted-foreground font-semibold text-lg'>
+            <span className='text-accent font-semibold text-lg'>
               Our Services
             </span>
-            <h2 className='text-4xl md:text-5xl font-serif font-bold text-foreground mt-4 mb-6'>
+            <h2 className='text-4xl md:text-5xl heading-professional mt-4 mb-6 text-gradient'>
               Comprehensive Financial Solutions
             </h2>
             <p className='text-xl text-muted-foreground max-w-3xl mx-auto'>
@@ -106,13 +106,13 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className='animate-on-scroll card-service group relative overflow-hidden p-8 border rounded-xl shadow-md hover:shadow-lg transition'
+              className='animate-on-scroll card-service group relative p-8'
               onMouseEnter={() => setHoveredService(index)}
               onMouseLeave={() => setHoveredService(null)}
             >
               {/* Icon */}
-              <div className='w-14 h-14 mb-6 bg-black rounded-xl flex items-center justify-center'>
-                <service.icon className='w-7 h-7 text-white' />
+              <div className='w-14 h-14 mb-6 bg-primary rounded-xl flex items-center justify-center shadow-md'>
+                <service.icon className='w-7 h-7 text-primary-foreground' />
               </div>
 
               {/* Service Content */}
@@ -122,7 +122,10 @@ const ServicesSection = () => {
               <p className='text-muted-foreground mb-6 leading-relaxed'>
                 {service.description}
               </p>
-              <Link to={service.link}>
+              <Link
+                to={service.link}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
                 <Button
                   variant='outline'
                   className='group hover:bg-primary hover:text-primary-foreground transition-all duration-300'
@@ -137,7 +140,10 @@ const ServicesSection = () => {
 
         {/* View More Button */}
         <div className='text-center animate-on-scroll'>
-          <Link to='/services'>
+          <Link
+            to='/services'
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             <Button size='lg' className='btn-accent'>
               View All Services
               <ArrowRight className='w-5 h-5 ml-2' />

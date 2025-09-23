@@ -74,7 +74,7 @@ const QueryForm = () => {
   ]
 
   return (
-    <div className='min-h-screen bg-background'>
+    <div className='min-h-screen bg-background mt-10'>
       <Header />
 
       <section className='pt-24 pb-20 bg-gradient-hero text-white'>

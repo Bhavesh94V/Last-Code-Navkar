@@ -17,7 +17,8 @@ import { Link } from 'react-router-dom'
 
 const Services = () => {
   useEffect(() => {
-    document.title = 'Our Services - Navkar Bhavsar & Co. | Chartered Accountant'
+    document.title =
+      'Our Services - Navkar Bhavsar & Co. | Chartered Accountant'
   }, [])
 
   const services = [
@@ -131,7 +132,7 @@ const Services = () => {
     <div className='min-h-screen bg-background'>
       <Header />
 
-      <section className='pt-24 pb-20 bg-gradient-hero text-white'>
+      <section className='pt-24 pb-20 bg-gradient-hero text-white mt-10'>
         <div className='container mx-auto px-6'>
           <div className='max-w-4xl mx-auto text-center'>
             <h1 className='text-5xl md:text-6xl font-serif font-bold mb-6'>
@@ -191,7 +192,12 @@ const Services = () => {
                   ))}
                 </ul>
 
-                <Link to={service.link}>
+                <Link
+                  to={service.link}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: 'smooth' })
+                  }
+                >
                   <Button className='w-full btn-primary'>Learn More</Button>
                 </Link>
               </div>

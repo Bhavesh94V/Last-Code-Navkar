@@ -104,14 +104,24 @@ const HeroSlider = () => {
                   </p>
                   <div className='flex flex-col sm:flex-row gap-4 justify-center animate-fade-up [animation-delay:600ms]'>
                     {/* CTA Button */}
-                    <Link to={slide.link}>
+                    <Link
+                      to={slide.link}
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      }
+                    >
                       <Button size='lg' className='btn-hero'>
                         {slide.cta}
                       </Button>
                     </Link>
 
                     {/* Contact Us Button */}
-                    <Link to='/contact'>
+                    <Link
+                      to='/contact'
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      }
+                    >
                       <Button
                         size='lg'
                         variant='outline'

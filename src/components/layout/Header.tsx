@@ -732,7 +732,7 @@ const Header = () => {
           ]
         }
       ]
-    },
+    }
   ]
 
   const adminItems = [
@@ -744,13 +744,7 @@ const Header = () => {
   const isExternal = (href: string) => /^https?:\/\//.test(href)
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-background/95 backdrop-blur-md shadow-md'
-          : 'bg-transparent'
-      }`}
-    >
+    <header className='fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-md shadow-md'>
       <nav className='container mx-auto px-6 py-4'>
         <div className='flex items-center justify-between'>
           {/* Logo */}
@@ -761,18 +755,10 @@ const Header = () => {
               </span>
             </div>
             <div>
-              <h1
-                className={`text-2xl font-serif font-bold transition-colors duration-300 ${
-                  isScrolled ? 'text-foreground' : 'text-white'
-                }`}
-              >
+              <h1 className='text-2xl font-serif font-bold text-primary transition-colors duration-300'>
                 Navkar Bhavsar
               </h1>
-              <p
-                className={`text-sm font-medium transition-colors duration-300 ${
-                  isScrolled ? 'text-muted-foreground' : 'text-white/80'
-                }`}
-              >
+              <p className='text-sm font-medium text-muted-foreground transition-colors duration-300'>
                 CA & CS
               </p>
             </div>
@@ -785,7 +771,7 @@ const Header = () => {
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? 'text-foreground hover:text-accent'
-                  : 'text-white hover:text-accent'
+                  : 'text-black hover:text-accent'
               } ${isActivePath('/about') ? 'text-accent' : ''}`}
             >
               About
@@ -797,7 +783,7 @@ const Header = () => {
                 className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-300 ${
                   isScrolled
                     ? 'text-foreground hover:text-accent'
-                    : 'text-white hover:text-accent'
+                    : 'text-black hover:text-accent'
                 }`}
               >
                 <span>Services</span>
@@ -834,7 +820,7 @@ const Header = () => {
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? 'text-foreground hover:text-accent'
-                  : 'text-white hover:text-accent'
+                  : 'text-black hover:text-accent'
               } ${isActivePath('/clients') ? 'text-accent' : ''}`}
             >
               Our Clients
@@ -845,14 +831,14 @@ const Header = () => {
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? 'text-foreground hover:text-accent'
-                  : 'text-white hover:text-accent'
+                  : 'text-black hover:text-accent'
               } ${isActivePath('/articles') ? 'text-accent' : ''}`}
             >
               Articles
             </Link>
 
             {/* Knowledge Bank with nested (sub) dropdowns */}
-            <DropdownMenu>
+            {/* <DropdownMenu>
               <DropdownMenuTrigger
                 className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-300 ${
                   isScrolled
@@ -868,7 +854,6 @@ const Header = () => {
                 {knowledgeBankItems.map((item: any) =>
                   item.children ? (
                     <DropdownMenuSub key={item.title}>
-                      {/* Main parent with submenu */}
                       <DropdownMenuSubTrigger
                         className='flex items-center justify-between px-4 py-2 text-sm transition-colors 
             hover:bg-accent hover:text-white focus:bg-accent/80 focus:text-white'
@@ -877,11 +862,9 @@ const Header = () => {
                         <ChevronRight className='w-4 h-4' />
                       </DropdownMenuSubTrigger>
 
-                      {/* Submenu Content */}
                       <DropdownMenuSubContent className='w-56 bg-popover border border-border shadow-md'>
                         {item.children.map((sub: any) =>
                           sub.children ? (
-                            // Nested submenu (for RERA Calculator type)
                             <DropdownMenuSub key={sub.title}>
                               <DropdownMenuSubTrigger
                                 className='flex items-center justify-between px-4 py-2 text-sm transition-colors 
@@ -920,7 +903,6 @@ const Header = () => {
                               </DropdownMenuSubContent>
                             </DropdownMenuSub>
                           ) : (
-                            // Normal submenu item
                             <DropdownMenuItem
                               key={sub.title}
                               asChild
@@ -946,7 +928,6 @@ const Header = () => {
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
                   ) : (
-                    // Normal single item
                     <DropdownMenuItem
                       key={item.title}
                       asChild
@@ -970,7 +951,7 @@ const Header = () => {
                   )
                 )}
               </DropdownMenuContent>
-            </DropdownMenu>
+            </DropdownMenu> */}
 
             {/* Other links */}
             <Link
@@ -978,7 +959,7 @@ const Header = () => {
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? 'text-foreground hover:text-accent'
-                  : 'text-white hover:text-accent'
+                  : 'text-black hover:text-accent'
               } ${isActivePath('/query') ? 'text-accent' : ''}`}
             >
               Query
@@ -989,7 +970,7 @@ const Header = () => {
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? 'text-foreground hover:text-accent'
-                  : 'text-white hover:text-accent'
+                  : 'text-black hover:text-accent'
               } ${isActivePath('/careers') ? 'text-accent' : ''}`}
             >
               Careers
@@ -1000,7 +981,7 @@ const Header = () => {
                 className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-300 ${
                   isScrolled
                     ? 'text-foreground hover:text-accent'
-                    : 'text-white hover:text-accent'
+                    : 'text-black hover:text-accent'
                 }`}
               >
                 <span>Admin</span>
@@ -1025,7 +1006,7 @@ const Header = () => {
               className={`text-sm font-medium transition-colors duration-300 ${
                 isScrolled
                   ? 'text-foreground hover:text-accent'
-                  : 'text-white hover:text-accent'
+                  : 'text-black hover:text-accent'
               } ${isActivePath('/contact') ? 'text-accent' : ''}`}
             >
               Contact Us
@@ -1036,21 +1017,15 @@ const Header = () => {
           <Button
             variant='ghost'
             size='sm'
-            className='lg:hidden'
+            className={`lg:hidden rounded-md p-2 transition-colors duration-300 ${
+              isMobileMenuOpen ? 'bg-primary text-white' : 'text-foreground'
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X
-                className={`w-6 h-6 ${
-                  isScrolled ? 'text-foreground' : 'text-white'
-                }`}
-              />
+              <X className='w-10 h-10' />
             ) : (
-              <Menu
-                className={`w-6 h-6 ${
-                  isScrolled ? 'text-foreground' : 'text-white'
-                }`}
-              />
+              <Menu className='w-10 h-10' />
             )}
           </Button>
         </div>
@@ -1083,12 +1058,12 @@ const Header = () => {
               >
                 Articles
               </Link>
-              <Link
+              {/* <Link
                 to='/knowledge'
                 className='text-sm font-medium text-foreground hover:text-accent'
               >
                 Knowledge Bank
-              </Link>
+              </Link> */}
               <Link
                 to='/query'
                 className='text-sm font-medium text-foreground hover:text-accent'

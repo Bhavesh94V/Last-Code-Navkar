@@ -59,7 +59,7 @@ const CompanyProfileSection = () => {
         {/* Section Header */}
         <div className='text-center mb-16'>
           <div className='animate-on-scroll'>
-            <span className='text-muted-foreground font-medium tracking-wide uppercase text-sm'>
+            <span className='text-accent font-medium tracking-wide uppercase text-sm'>
               Company Resources
             </span>
             <h2 className='text-4xl md:text-5xl font-serif font-bold text-foreground mt-4 mb-4'>

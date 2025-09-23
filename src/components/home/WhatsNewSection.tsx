@@ -134,7 +134,7 @@ Our team stays updated with all digital processes and can guide you through the 
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="animate-on-scroll">
-            <span className="text-muted-foreground font-semibold text-lg">Latest Updates</span>
+            <span className="text-accent font-semibold text-lg">Latest Updates</span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-4 mb-6">
               What's New
             </h2>

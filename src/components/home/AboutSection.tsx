@@ -78,6 +78,7 @@ const AboutSection = () => {
             <div className='animate-on-scroll mt-8'>
               <Link
                 to='/about'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className='btn-primary inline-block px-6 py-3 rounded-lg text-white text-lg font-medium'
               >
                 Learn More About Us
@@ -109,7 +110,7 @@ const AboutSection = () => {
         {/* Mission & Vision */}
         <div className='mt-20 grid md:grid-cols-2 gap-12'>
           <div className='animate-on-scroll card-professional p-8'>
-            <div className='w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center mb-6'>
+            <div className='w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6'>
               <TrendingUp className='w-6 h-6 text-accent-foreground' />
             </div>
             <h3 className='text-2xl font-serif font-bold text-foreground mb-4'>

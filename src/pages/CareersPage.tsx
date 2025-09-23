@@ -46,7 +46,7 @@ export default function CareersPage () {
   }
 
   return (
-    <div className='min-h-screen bg-gradient-hero flex flex-col'>
+    <div className='min-h-screen bg-gradient-hero flex flex-col mt-10'>
       <Header />
 
       {/* Main Content */}
