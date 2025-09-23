@@ -4,10 +4,10 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
 
+
 // Import routes
 const queryRoutes = require('./routes/queryRoutes');
 const contactRoutes = require('./routes/contactRoutes');
-const careerRoutes = require('./routes/careerRoutes');
 
 // Connect to MongoDB
 connectDB();
@@ -22,7 +22,6 @@ app.use(express.urlencoded({ extended: true })); // Body parser for URL-encoded 
 // Mount routes
 app.use('/api/query', queryRoutes);
 app.use('/api/contact', contactRoutes);
-app.use('/api/career', careerRoutes);
 
 // Basic route for testing
 app.get('/', (req, res) => {

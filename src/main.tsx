@@ -1,5 +1,14 @@
-import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { store } from "./lib/store";
+import { Provider } from "react-redux";
+import "./index.css"; // CSS ko wapas import karo
 
-createRoot(document.getElementById("root")!).render(<App />);
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+    <React.StrictMode>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </React.StrictMode>
+);
