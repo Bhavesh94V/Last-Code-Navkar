@@ -13,7 +13,7 @@ const getApiBaseUrl = () => {
       : undefined
 
   // Order of preference: process (when available) → window (if provided) → local dev fallback
-  return fromProcess || fromWindow || "http://localhost:5000/api"
+  return fromProcess || fromWindow || "https://navkar-bhavsar.onrender.com/api"
 }
 
 const API_BASE_URL = getApiBaseUrl()

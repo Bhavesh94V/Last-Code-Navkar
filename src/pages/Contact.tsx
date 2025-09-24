@@ -76,30 +76,40 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Office Address",
+      title: 'Office Address',
       details: [
-        "Navkar Bhavsar & Co.",
-        "VRAJ VALENCIA, 4th Floor 408-411,",
-        "Behind Mahindra Showroom, Near Sola Flyover,",
-        "S. G. Highway, Ahmedabad - 380060",
-      ],
+        'Navkar Bhavsar & Co.',
+        'Privillion East Wing, 2nd Floor,',
+        'Behind Iskon Temple, SG Highway,',
+        'Ahmedabad, Gujarat - 380054'
+      ]
     },
     {
       icon: Phone,
-      title: "Phone Numbers",
-      details: ["+91 - 79 - 26568636 / 26568637", "Mobile: +91 - 9879561032, 9824798534", "Fax: +91 - 79 - 30613455"],
+      title: 'Phone Numbers',
+      details: [
+        '‪+91 - 79 - 26568636‬ / 26568637',
+        'Mobile: ‪+91 - 9879561032‬, 9824798534',
+        'Fax: ‪+91 - 79 - 30613455‬'
+      ]
     },
     {
       icon: Mail,
-      title: "Email Addresses",
-      details: ["bihari@biharishahandco.com", "biharishah@yahoo.com"],
+      title: 'Email Addresses',
+      details: ['bihari@biharishahandco.com', 'biharishah@yahoo.com']
     },
     {
       icon: Clock,
-      title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 7:00 PM", "Saturday: 9:00 AM - 2:00 PM", "Sunday: Closed"],
-    },
+      title: 'Business Hours',
+      details: [
+        'Monday - Friday: 9:00 AM - 7:00 PM',
+        'Saturday: 9:00 AM - 2:00 PM',
+        'Sunday: Closed'
+      ]
+    }
   ]
+
+
 
   const services = [
     "Gujarat VAT & Service TAX",
@@ -278,29 +288,32 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-gradient-secondary">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif font-bold text-foreground mb-6">Visit Our Office</h2>
-            <p className="text-sm text-muted-foreground mt-2">
-              VRAJ VALENCIA, 4th Floor 408-411, Behind Mahindra Showroom, Near Sola Flyover, S. G. Highway, Ahmedabad -
-              380060
+      <section className='py-20 bg-gradient-secondary'>
+        <div className='container mx-auto px-6'>
+          <div className='text-center mb-12'>
+            <h2 className='text-4xl font-serif font-bold text-foreground mb-6'>
+              Visit Our Office
+            </h2>
+            <p className='text-sm text-muted-foreground mt-2'>
+              Navkar Bhavsar & Co., Privillion East Wing, 2nd Floor, Behind
+              Iskon Temple, SG Highway, Ahmedabad, Gujarat - 380054
             </p>
           </div>
 
-          <div className="card-professional overflow-hidden">
+          <div className='card-professional overflow-hidden'>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.8328133100317!2d72.51818917561278!3d23.07423467913752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e834b5249aeeb%3A0xfc772675462ac8d9!2sVRAJ%20VALENCIA!5e1!3m2!1sen!2sin!4v1758021798033!5m2!1sen!2sin"
-              width="100%"
-              height="450"
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31593.496043587395!2d72.48560064545451!3d23.028056075188072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85d61b5755d9%3A0xa16d1c9035214819!2sNavkar%20Bhavsar%20%26%20co.!5e1!3m2!1sen!2sin!4v1758687916655!5m2!1sen!2sin'
+              width='100%'
+              height='450'
               style={{ border: 0 }}
               allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              loading='lazy'
+              referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
           </div>
         </div>
       </section>
+
 
       <Footer />
     </div>

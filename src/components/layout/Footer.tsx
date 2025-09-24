@@ -125,9 +125,9 @@ const Footer = () => {
                 <MapPin className='w-5 h-5 text-accent mt-1 flex-shrink-0' />
                 <div className='text-primary-foreground/80 text-sm leading-relaxed'>
                   Navkar Bhavsar & Co., <br />
-                  VRAJ VALENCIA, 4th Floor 408-411, <br />
-                  Behind Mahindra Showroom, Near Sola Flyover, <br />
-                  S. G. Highway, Ahmedabad - 380060
+                  Privillion East Wing, 2nd Floor, <br />
+                  Behind Iskon Temple, SG Highway, <br />
+                  Ahmedabad, Gujarat - 380054
                 </div>
               </div>
 
@@ -190,11 +190,15 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className='border-t border-primary-foreground/10'>
         <div className='container mx-auto px-6 py-6'>
-          <div className='flex flex-col md:flex-row justify-between items-center'>
-            <div className='text-primary-foreground/80 text-sm mb-4 md:mb-0'>
-              © {currentYear} Navkar Bhavsar & Co. All rights reserved.
+          <div className='flex flex-col-reverse md:flex-row justify-between items-center'>
+            {/* Left Section: Copyright + Powered by */}
+            <div className='text-primary-foreground/80 text-sm mt-4 md:mt-0 text-center md:text-left'>
+              Copyright © {currentYear} Navkar Bhavsar & Co. | Powered by{' '}
+              <span className='font-semibold'>Loopera</span>
             </div>
-            <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm'>
+
+            {/* Right Section: Links */}
+            <div className='flex flex-row flex-wrap justify-center md:justify-end space-x-6 text-sm mb-4 md:mb-0'>
               <Link
                 to='/privacy'
                 className='text-primary-foreground/80 hover:text-accent transition-colors'

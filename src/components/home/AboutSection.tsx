@@ -45,33 +45,20 @@ const AboutSection = () => {
           <div>
             <div className='animate-on-scroll'>
               <span className='text-muted-foreground font-semibold text-lg'>
-                About Navkar Bhavsar & Co.
+                Empowering Businesses with Expertise
               </span>
               <h2 className='text-4xl md:text-5xl font-serif font-bold text-foreground mt-4 mb-6'>
-                Your Trusted Financial Partner Since 1999
+                Welcome to Navkar Bhavsar & Co
               </h2>
             </div>
 
             <div className='animate-on-scroll space-y-6'>
               <p className='text-lg text-muted-foreground leading-relaxed'>
-                Founded on{' '}
-                <strong>
-                  1<sup>st</sup> April 1999
-                </strong>{' '}
-                by Mr. Navkar Bhavsar,
-                <strong> M/s Navkar Bhavsar & Co.</strong> has been serving
-                clients across diverse structures including Companies, Trusts,
-                Firms, Proprietorships and Government Bodies. We are committed
-                to delivering services of the highest standards while keeping
-                client interests at the forefront.
+                Your Trusted Partner in Company Secretarial, Chartered Accountancy, and Business Advisory Services
               </p>
 
               <p className='text-lg text-muted-foreground leading-relaxed'>
-                <strong>Navkar Bhavsar & Co.</strong> is a distinguished team of
-                Chartered Accountants, advisors and tax consultants. We offer
-                expertise in Tax Advisory, Legal Compliance and allied services,
-                providing value-driven solutions to meet evolving business
-                needs.
+                At <strong>Navkar Bhavsar & Co,</strong> we combine deep expertise in company secretarial compliance, financial consulting, and strategic business advisory to empower your organization’s growth and governance. With years of professional experience, our dedicated team delivers comprehensive solutions tailored for businesses across sectors.
               </p>
             </div>
 
