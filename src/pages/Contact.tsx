@@ -88,15 +88,15 @@ const Contact = () => {
       icon: Phone,
       title: 'Phone Numbers',
       details: [
-        '‪+91 - 79 - 26568636‬ / 26568637',
-        'Mobile: ‪+91 - 9879561032‬, 9824798534',
-        'Fax: ‪+91 - 79 - 30613455‬'
+        // '‪+91 - 79 - 26568636‬ / 26568637',
+        'Mobile: ‪+91 - 7567564286‬, 8989696886',
+        // 'Fax: ‪+91 - 79 - 30613455‬'
       ]
     },
     {
       icon: Mail,
       title: 'Email Addresses',
-      details: ['bihari@biharishahandco.com', 'biharishah@yahoo.com']
+      details: ['Navkar@navkarbhavsarandco.com', 'Contact@navkarbhavsarandco.com']
     },
     {
       icon: Clock,

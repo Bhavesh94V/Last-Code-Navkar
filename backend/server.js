@@ -40,10 +40,10 @@
 //     console.log(`Server running on port ${PORT}`);
 // });
 // backend/server.js
-require("dotenv").config() // Load environment variables from .env file
 const express = require("express")
 const cors = require("cors")
 const connectDB = require("./config/db")
+require("dotenv").config() // Load environment variables from .env file
 
 // Import routes
 const queryRoutes = require("./routes/queryRoutes")

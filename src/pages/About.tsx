@@ -45,29 +45,29 @@ const About = () => {
 
   const team = [
     {
-      name: 'CA Navkar Bhavsar',
+      name: 'CS NAVKAR BHAVSAR',
       position: 'Managing Partner',
       experience: '25+ Years',
       specialization: 'Corporate Finance & Tax Planning',
-      image: '/api/placeholder/300/300',
+      image: 'public/docs/img2.jpg',
       qualifications: ['FCA', 'CPA']
     },
     {
-      name: 'CA Priya Sharma',
+      name: 'CA Viral Shah',
       position: 'Senior Partner',
       experience: '18+ Years',
       specialization: 'Audit & Assurance Services',
-      image: '/api/placeholder/300/300',
+      image: 'public/docs/img1.jpg',
       qualifications: ['FCA', 'DISA']
     },
-    {
-      name: 'CA Rajesh Kumar',
-      position: 'Partner',
-      experience: '15+ Years',
-      specialization: 'Business Advisory & Compliance',
-      image: '/api/placeholder/300/300',
-      qualifications: ['FCA', 'MBA']
-    }
+    // {
+    //   name: 'CA Rajesh Kumar',
+    //   position: 'Partner',
+    //   experience: '15+ Years',
+    //   specialization: 'Business Advisory & Compliance',
+    //   image: '/api/placeholder/300/300',
+    //   qualifications: ['FCA', 'MBA']
+    // }
   ]
 
   const stats = [
@@ -334,17 +334,17 @@ const About = () => {
             </h2>
           </div>
 
-          <div className='grid lg:grid-cols-3 gap-8'>
+          <div className='grid lg:grid-cols-2 gap-8'>
             {team.map((member, index) => (
               <div
                 key={index}
                 className='card-professional overflow-hidden group hover:shadow-strong transition-all duration-500'
               >
-                <div className='relative h-64 overflow-hidden'>
+                <div className='relative h-96 overflow-hidden'>
                   <img
                     src={member.image}
                     alt={member.name}
-                    className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
+                    className='w-full h- object-cover group-hover:scale-105 transition-transform duration-500'
                   />
                   <div className='absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-80 transition-opacity duration-300'></div>
                   <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>

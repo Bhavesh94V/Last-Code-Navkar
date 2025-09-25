@@ -135,7 +135,7 @@ const Footer = () => {
               <div className='flex items-start space-x-3'>
                 <Phone className='w-5 h-5 text-accent mt-1 flex-shrink-0' />
                 <div className='text-primary-foreground/80 text-sm leading-relaxed'>
-                  +91 - 9879561032, +91 - 9824798534
+                  +91 - 7567564286, +91 - 8989696886
                 </div>
               </div>
 
@@ -143,8 +143,8 @@ const Footer = () => {
               <div className='flex items-start space-x-3'>
                 <Mail className='w-5 h-5 text-accent mt-1 flex-shrink-0' />
                 <div className='text-primary-foreground/80 text-sm leading-relaxed'>
-                  bihari@biharishahandco.com <br />
-                  biharishah@yahoo.com
+                  Navkar@navkarbhavsarandco.com <br />
+                  Contact@navkarbhavsarandco.com
                 </div>
               </div>
 
