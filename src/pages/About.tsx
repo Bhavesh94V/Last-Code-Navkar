@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import img1 from '../assets/img1.jpg'
+import img2 from '../assets/img2.jpg'
 import {
   Award,
   Users,
@@ -49,7 +51,7 @@ const About = () => {
       position: 'Managing Partner',
       experience: '25+ Years',
       specialization: 'Corporate Finance & Tax Planning',
-      image: 'public/docs/img2.jpg',
+      image: img2,
       qualifications: ['FCA', 'CPA']
     },
     {
@@ -57,7 +59,7 @@ const About = () => {
       position: 'Senior Partner',
       experience: '18+ Years',
       specialization: 'Audit & Assurance Services',
-      image: 'public/docs/img1.jpg',
+      image: img1,
       qualifications: ['FCA', 'DISA']
     },
     // {
