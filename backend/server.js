@@ -59,23 +59,33 @@ const app = express()
 // app.use(cors()) 
 // Middleware
 const allowedOrigins = [
-    "http://localhost:8080",
-    "https://navkarbhavsarandco.com/",
+    "http://localhost:8080",           // local frontend
+    "https://navkarbhavsarandco.com"  // production frontend
 ];
 
 app.use(
     cors({
         origin: function (origin, callback) {
+            // Postman, server requests etc. no origin
             if (!origin) return callback(null, true);
+
             if (allowedOrigins.indexOf(origin) === -1) {
-                const msg = `The CORS policy for this site does not allow access from the specified Origin: ${origin}`;
-                return callback(new Error(msg), false);
+                return callback(new Error(`CORS block: ${origin}`), false);
             }
             return callback(null, true);
         },
-        credentials: true,
+        credentials: true, // mandatory for cookies/auth
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // allow preflight methods
+        allowedHeaders: ["Content-Type", "Authorization"], // headers allowed
     })
 );
+
+// Handle preflight OPTIONS requests manually
+app.options("*", cors({
+    origin: allowedOrigins,
+    credentials: true,
+}));
+
 
 app.use(express.json()) // Body parser for JSON data
 app.use(express.urlencoded({ extended: true })) // Body parser for URL-encoded data
