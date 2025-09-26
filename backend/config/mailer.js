@@ -27,23 +27,19 @@
 // };
 
 // module.exports = sendEmail;
-
-
-
 // backend/config/mailer.js
-const nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer');
 
-// Gmail transporter tuned for Render
 const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,          // TLS port
-    secure: false,      // TLS, not SSL
+    host: 'smtp.gmail.com',
+    port: 587,            // TLS port
+    secure: false,        // must be false for TLS
     auth: {
-        user: process.env.EMAIL_USER,   // your Gmail
-        pass: process.env.EMAIL_PASS,   // App Password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS, // App Password
     },
     tls: {
-        rejectUnauthorized: false,      // helps Render cloud connect
+        rejectUnauthorized: false,   // helps Render connect
     },
 });
 
@@ -56,10 +52,10 @@ const sendEmail = async ({ to, subject, html, attachments }) => {
             html,
             attachments,
         });
-        console.log("Email sent successfully");
+        console.log('Email sent successfully');
         return { success: true };
     } catch (error) {
-        console.error("Error sending email:", error);
+        console.error('Error sending email:', error);
         return { success: false, error };
     }
 };
