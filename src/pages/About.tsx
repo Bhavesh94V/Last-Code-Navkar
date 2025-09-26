@@ -48,19 +48,19 @@ const About = () => {
   const team = [
     {
       name: 'CS NAVKAR BHAVSAR',
-      position: 'Managing Partner',
-      experience: '25+ Years',
+      position: 'Co-Founder',
+      // experience: '25+ Years',
       specialization: 'Corporate Finance & Tax Planning',
       image: img2,
-      qualifications: ['FCA', 'CPA']
+      qualifications: ['CS', 'CA']
     },
     {
       name: 'CA Viral Shah',
-      position: 'Senior Partner',
-      experience: '18+ Years',
+      position: 'Co-Founder',
+      // experience: '18+ Years',
       specialization: 'Audit & Assurance Services',
       image: img1,
-      qualifications: ['FCA', 'DISA']
+      qualifications: ['CS', 'CA']
     },
     // {
     //   name: 'CA Rajesh Kumar',
@@ -364,9 +364,9 @@ const About = () => {
                   <p className='text-accent font-medium mb-2'>
                     {member.position}
                   </p>
-                  <p className='text-muted-foreground text-sm mb-4'>
+                  {/* <p className='text-muted-foreground text-sm mb-4'>
                     {member.experience}
-                  </p>
+                  </p> */}
 
                   <div className='flex flex-wrap gap-2'>
                     {member.qualifications.map((qual, qualIndex) => (

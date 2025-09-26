@@ -174,7 +174,7 @@ const Footer = () => {
               <input
                 type='email'
                 placeholder='Enter your email'
-                className='flex-1 px-4 py-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded-lg text-primary-foreground placeholder:text-primary-foreground/60 focus:outline-none focus:ring-2 focus:ring-accent'
+                className='flex-1 px-4 py- bg-primary-foreground/10 border border-primary-foreground/20 rounded-lg text-primary-foreground placeholder:text-primary-foreground/60 focus:outline-none focus:ring-2 focus:ring-accent'
               />
               <Button
                 variant='secondary'
