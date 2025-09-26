@@ -16,9 +16,9 @@ import type { QueryFormData, ContactFormData, ApiResponse, CareerFormData } from
 // Query form saga
 function* handleSubmitQuery(action: PayloadAction<QueryFormData>) {
   try {
-    console.log("[v0] Submitting query form:", action.payload)
+    console.log("Submitting query form:", action.payload)
     const response: ApiResponse = yield call(queryService.submitQuery, action.payload)
-    console.log("[v0] Query submission response:", response)
+    console.log("Query submission response:", response)
 
     if (response.success) {
       yield put(submitQuerySuccess(response.message))
@@ -26,7 +26,7 @@ function* handleSubmitQuery(action: PayloadAction<QueryFormData>) {
       yield put(submitQueryFailure(response.message || "Query submission failed"))
     }
   } catch (error: any) {
-    console.error("[v0] Query submission error:", error)
+    console.error("Query submission error:", error)
     const errorMessage = error.response?.data?.message || error.message || "Network error occurred"
     yield put(submitQueryFailure(errorMessage))
   }
@@ -35,9 +35,9 @@ function* handleSubmitQuery(action: PayloadAction<QueryFormData>) {
 // Contact form saga
 function* handleSubmitContact(action: PayloadAction<ContactFormData>) {
   try {
-    console.log("[v0] Submitting contact form:", action.payload)
+    console.log("Submitting contact form:", action.payload)
     const response: ApiResponse = yield call(contactService.submitContact, action.payload)
-    console.log("[v0] Contact submission response:", response)
+    console.log("Contact submission response:", response)
 
     if (response.success) {
       yield put(submitContactSuccess(response.message))
@@ -45,7 +45,7 @@ function* handleSubmitContact(action: PayloadAction<ContactFormData>) {
       yield put(submitContactFailure(response.message || "Contact submission failed"))
     }
   } catch (error: any) {
-    console.error("[v0] Contact submission error:", error)
+    console.error("Contact submission error:", error)
     const errorMessage = error.response?.data?.message || error.message || "Network error occurred"
     yield put(submitContactFailure(errorMessage))
   }
@@ -53,12 +53,12 @@ function* handleSubmitContact(action: PayloadAction<ContactFormData>) {
 
 function* handleSubmitCareer(action: PayloadAction<CareerFormData>) {
   try {
-    console.log("[v0] Submitting career application:", {
+    console.log("Submitting career application:", {
       ...action.payload,
       resume: action.payload.resume ? action.payload.resume.name : null,
     })
     const response: ApiResponse = yield call(careerService.submitCareer, action.payload)
-    console.log("[v0] Career submission response:", response)
+    console.log("Career submission response:", response)
 
     if (response.success) {
       yield put(submitCareerSuccess(response.message))
@@ -66,7 +66,7 @@ function* handleSubmitCareer(action: PayloadAction<CareerFormData>) {
       yield put(submitCareerFailure(response.message || "Career submission failed"))
     }
   } catch (error: any) {
-    console.error("[v0] Career submission error:", error)
+    console.error("Career submission error:", error)
     const errorMessage = error.response?.data?.message || error.message || "Network error occurred"
     yield put(submitCareerFailure(errorMessage))
   }
